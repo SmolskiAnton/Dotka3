@@ -10,7 +10,7 @@ int main()
 	if (secret_number / 10 == 0)
 	{
 		cout << "ýòî îäíîçíà÷íîå ÷èñëî!" << endl;
-		cout<<2+3<<endl;
+		
 	}
 	else 
 	{
