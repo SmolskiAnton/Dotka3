@@ -9,66 +9,67 @@ int main()
 	int secret_number = rand() % 99 + 1;
 	if (secret_number / 10 == 0)
 	{
-		cout << "ıòî îäíîçíà÷íîå ÷èñëî!" << endl;
+		cout << "Ã½Ã²Ã® Ã®Ã¤Ã­Ã®Ã§Ã­Ã Ã·Ã­Ã®Ã¥ Ã·Ã¨Ã±Ã«Ã®!" << endl;
+		cout<<2+3<<endl;
 	}
 	else 
 	{
-		cout << "ıòî äâóõçíà÷íîå ÷èñëî!" << endl;
+		cout << "Ã½Ã²Ã® Ã¤Ã¢Ã³ÃµÃ§Ã­Ã Ã·Ã­Ã®Ã¥ Ã·Ã¨Ã±Ã«Ã®!" << endl;
 	}
 	if (secret_number % 2 == 0)
 	{
-		cout << "ıòî ÷åòíîå ÷èñëî!" << endl;
+		cout << "Ã½Ã²Ã® Ã·Ã¥Ã²Ã­Ã®Ã¥ Ã·Ã¨Ã±Ã«Ã®!" << endl;
 	}
 	else
 	{
-		cout << "ıòî íå÷åòíîå ÷èñëî!" << endl;
+		cout << "Ã½Ã²Ã® Ã­Ã¥Ã·Ã¥Ã²Ã­Ã®Ã¥ Ã·Ã¨Ã±Ã«Ã®!" << endl;
 	}
 	int guess, counter = 0;
-	cout << "îãàäàéòå ÷èñëî îò 1 äî 99:";
+	cout << "Ã®Ã£Ã Ã¤Ã Ã©Ã²Ã¥ Ã·Ã¨Ã±Ã«Ã® Ã®Ã² 1 Ã¤Ã® 99:";
 	do
 	{
-		cout << "âàøå ÷èñëî=";
+		cout << "Ã¢Ã Ã¸Ã¥ Ã·Ã¨Ã±Ã«Ã®=";
 		cin >> guess;
 		counter++;
 		if (secret_number < guess)
 		{
-			cout << "âàøå ñåêğò. ÷èñëî ìåíüøå!" << endl;
+			cout << "Ã¢Ã Ã¸Ã¥ Ã±Ã¥ÃªÃ°Ã². Ã·Ã¨Ã±Ã«Ã® Ã¬Ã¥Ã­Ã¼Ã¸Ã¥!" << endl;
 		}
 		else if (secret_number > guess)
 		{
-			cout << "âàøå ñåêğò. ÷èñëî áîëüøå!" << endl;
+			cout << "Ã¢Ã Ã¸Ã¥ Ã±Ã¥ÃªÃ°Ã². Ã·Ã¨Ã±Ã«Ã® Ã¡Ã®Ã«Ã¼Ã¸Ã¥!" << endl;
 		}
 	} while (secret_number != guess);
-			cout << "âû óãàäàëè!" << endl;
-		cout << "âàøå êîëè÷åñòâî ïîïûòîê=" << counter << endl;
+			cout << "Ã¢Ã» Ã³Ã£Ã Ã¤Ã Ã«Ã¨!" << endl;
+		cout << "Ã¢Ã Ã¸Ã¥ ÃªÃ®Ã«Ã¨Ã·Ã¥Ã±Ã²Ã¢Ã® Ã¯Ã®Ã¯Ã»Ã²Ã®Ãª=" << counter << endl;
 
 		cout << endl;
 
-		cout << "Âîçğàñò" << secret_number << " ";
+		cout << "Ã‚Ã®Ã§Ã°Ã Ã±Ã²" << secret_number << " ";
 		if (secret_number / 10 == 1)
 		{
-			cout << "ëåò" << endl;
+			cout << "Ã«Ã¥Ã²" << endl;
 		}
 		else
-		switch(secret_number%10)// çàäà÷à 2
+		switch(secret_number%10)// Ã§Ã Ã¤Ã Ã·Ã  2
 		{
-		case 1:cout << "ãîä" << endl;
+		case 1:cout << "Ã£Ã®Ã¤" << endl;
 			break;
 		case 2:
 		case 3:
-		case 4:cout << "ãîäà" << endl;
+		case 4:cout << "Ã£Ã®Ã¤Ã " << endl;
 			break;
 		case 5:
 		case 6:
 		case 7:
 		case 8:
 		case 9:	
-		case 0:cout << "ëåò" << endl;
+		case 0:cout << "Ã«Ã¥Ã²" << endl;
 			break;
 		}
 
 
-		cout << "÷èñëà ôèáîíà÷÷è:" << endl;
+		cout << "Ã·Ã¨Ã±Ã«Ã  Ã´Ã¨Ã¡Ã®Ã­Ã Ã·Ã·Ã¨:" << endl;
 		int prev = 1;
 		int curr = 1;
 		cout << curr << " ";
@@ -81,33 +82,33 @@ int main()
 		}
 
 
-		return 0;
+		return 0;//ĞºĞ¾Ğ½ĞµÑ†
 }
 
 	
 	/*
 
-	// îïğåäåëåíèå ïğîñòîå ÷èñëî èëè ñîñòàâíîå
+	// Ã®Ã¯Ã°Ã¥Ã¤Ã¥Ã«Ã¥Ã­Ã¨Ã¥ Ã¯Ã°Ã®Ã±Ã²Ã®Ã¥ Ã·Ã¨Ã±Ã«Ã® Ã¨Ã«Ã¨ Ã±Ã®Ã±Ã²Ã Ã¢Ã­Ã®Ã¥
 	int number;
-	cout << "ââåäèòå ÷èñëî" << endl;
+	cout << "Ã¢Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ Ã·Ã¨Ã±Ã«Ã®" << endl;
 	cin >> number;
 	if (number == 1)
-		cout << "íå ïğîñòîå è íå ñîñòàâíîå!";
+		cout << "Ã­Ã¥ Ã¯Ã°Ã®Ã±Ã²Ã®Ã¥ Ã¨ Ã­Ã¥ Ã±Ã®Ã±Ã²Ã Ã¢Ã­Ã®Ã¥!";
 	else {
 		int i = 1;
 		do {
 			i++;
 		} while (number % i != 0);
 		if (number / i == 1)
-			cout << "ïğîñòîå";
-		else cout << "íå ïğîñòîå";
+			cout << "Ã¯Ã°Ã®Ã±Ã²Ã®Ã¥";
+		else cout << "Ã­Ã¥ Ã¯Ã°Ã®Ã±Ã²Ã®Ã¥";
 		#include <iostream>
 using namespace std;
 int main()
 {
 	setlocale(LC_ALL,"rus");
 	int number;
-	cout << "ââåäèòå ÷èñëî" << endl;
+	cout << "Ã¢Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ Ã·Ã¨Ã±Ã«Ã®" << endl;
 	cin >> number;
 	bool flag = true;
 	int i = 2;
@@ -120,15 +121,15 @@ int main()
 		i++;
 	}
 	if (number == 1)
-		cout << "íå ïğîñòîå è íå ñîñòàâíîå!";
+		cout << "Ã­Ã¥ Ã¯Ã°Ã®Ã±Ã²Ã®Ã¥ Ã¨ Ã­Ã¥ Ã±Ã®Ã±Ã²Ã Ã¢Ã­Ã®Ã¥!";
 	else if (flag)
-		cout << "ïğîñòîå";
-	else cout << "ñîñòàâíîå";
+		cout << "Ã¯Ã°Ã®Ã±Ã²Ã®Ã¥";
+	else cout << "Ã±Ã®Ã±Ã²Ã Ã¢Ã­Ã®Ã¥";
 	}
 	*/
 	/*
 	* int a,b,k;
-	cout << "ââåäèòå ÷èñëî" << endl;
+	cout << "Ã¢Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ Ã·Ã¨Ã±Ã«Ã®" << endl;
 	cin >> a>>b>>k;
 	int resault = 0;
 	for (int i = a; i <= b; i++)
@@ -167,15 +168,15 @@ int main()
 		if (number % i == 0) flag = false;
 		i++;
 	}
-	if(number==1)cout << "íå ïğîñòîå è íå ñîñòàâíîå!"<<endl;
+	if(number==1)cout << "Ã­Ã¥ Ã¯Ã°Ã®Ã±Ã²Ã®Ã¥ Ã¨ Ã­Ã¥ Ã±Ã®Ã±Ã²Ã Ã¢Ã­Ã®Ã¥!"<<endl;
 	else if (flag)
-		cout << "ïğîñòîå"<<endl;
-	else cout << "ñîñòàâíîå";
+		cout << "Ã¯Ã°Ã®Ã±Ã²Ã®Ã¥"<<endl;
+	else cout << "Ã±Ã®Ã±Ã²Ã Ã¢Ã­Ã®Ã¥";
 	{
 		for (int i = 2; i <= number / 2; i++)
 		{
 			if (number % i == 0)
-				cout << "Äåëèòåëü ÷èñëà=" << i << endl;
+				cout << "Ã„Ã¥Ã«Ã¨Ã²Ã¥Ã«Ã¼ Ã·Ã¨Ã±Ã«Ã =" << i << endl;
 		}
 	}
 	*/
