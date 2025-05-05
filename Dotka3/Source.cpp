@@ -9,7 +9,7 @@ int main()
 	int secret_number = rand() % 99 + 1;
 	if (secret_number / 10 == 0)
 	{
-		cout << "ýòî îäíîçíà÷íîå ÷èñëî!" << endl;
+		cout << "это однозначное число!" << endl;
 		
 	}
 	else 
