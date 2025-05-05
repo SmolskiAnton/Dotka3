@@ -14,62 +14,62 @@ int main()
 	}
 	else 
 	{
-		cout << "ýòî äâóõçíà÷íîå ÷èñëî!" << endl;
+		cout << "это двухзначное число!" << endl;
 	}
 	if (secret_number % 2 == 0)
 	{
-		cout << "ýòî ÷åòíîå ÷èñëî!" << endl;
+		cout << "это четное число!"<< endl;
 	}
 	else
 	{
-		cout << "ýòî íå÷åòíîå ÷èñëî!" << endl;
+		cout <<  "это нечетное число!" << endl;
 	}
 	int guess, counter = 0;
-	cout << "îãàäàéòå ÷èñëî îò 1 äî 99:";
+	cout << "отгадайте число от 1 до 99:";
 	do
 	{
-		cout << "âàøå ÷èñëî=";
+		cout <<"ваше число=";
 		cin >> guess;
 		counter++;
 		if (secret_number < guess)
 		{
-			cout << "âàøå ñåêðò. ÷èñëî ìåíüøå!" << endl;
+			cout << "ваше секрт. число меньше!" << endl;
 		}
 		else if (secret_number > guess)
 		{
-			cout << "âàøå ñåêðò. ÷èñëî áîëüøå!" << endl;
+			cout << "ваше секрт. число больше!"<< endl;
 		}
 	} while (secret_number != guess);
-			cout << "âû óãàäàëè!" << endl;
-		cout << "âàøå êîëè÷åñòâî ïîïûòîê=" << counter << endl;
+			cout << "вы угадали!"<< endl;
+		cout << "ваше количество попыток=" << counter << endl;
 
 		cout << endl;
 
-		cout << "Âîçðàñò" << secret_number << " ";
+		cout << "Возраст"<< secret_number << " ";
 		if (secret_number / 10 == 1)
 		{
-			cout << "ëåò" << endl;
+			cout << "лет" << endl;
 		}
 		else
 		switch(secret_number%10)// çàäà÷à 2
 		{
-		case 1:cout << "ãîä" << endl;
+		case 1:cout << "год" << endl;
 			break;
 		case 2:
 		case 3:
-		case 4:cout << "ãîäà" << endl;
+		case 4:cout << "года" << endl;
 			break;
 		case 5:
 		case 6:
 		case 7:
 		case 8:
 		case 9:	
-		case 0:cout << "ëåò" << endl;
+		case 0:cout << "лет" << endl;
 			break;
 		}
 
 
-		cout << "÷èñëà ôèáîíà÷÷è:" << endl;
+		cout << "числа фибоначчи:" << endl;
 		int prev = 1;
 		int curr = 1;
 		cout << curr << " ";
